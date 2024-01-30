@@ -1,0 +1,3 @@
+C:/Users/4elik/source/repos/build/NewRes1/CMakeFiles/Res1.dir
+C:/Users/4elik/source/repos/build/NewRes1/CMakeFiles/ALL_BUILD.dir
+C:/Users/4elik/source/repos/build/NewRes1/CMakeFiles/ZERO_CHECK.dir
