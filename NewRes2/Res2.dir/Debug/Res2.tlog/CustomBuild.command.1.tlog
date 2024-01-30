@@ -1,0 +1,10 @@
+^C:\USERS\SSH-O\РАБОЧИЙ СТОЛ\PROJECTS\VS\GIT\LAB1-SHATALOV-PRILUCHNIY\RES2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ssh-o/Рабочий стол/Projects/VS/Git/Lab1-Shatalov-Priluchniy/Res2" "-BC:/Users/ssh-o/Рабочий стол/Projects/VS/Build/NewRes2" --check-stamp-file "C:/Users/ssh-o/Рабочий стол/Projects/VS/Build/NewRes2/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

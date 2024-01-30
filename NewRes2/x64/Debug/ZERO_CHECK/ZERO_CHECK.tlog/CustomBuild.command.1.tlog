@@ -1,0 +1,10 @@
+^C:\USERS\SSH-O\РАБОЧИЙ СТОЛ\PROJECTS\VS\BUILD\NEWRES2\CMAKEFILES\62FC23F2E4B351861AE02F7FDB769FE1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ssh-o/Рабочий стол/Projects/VS/Git/Lab1-Shatalov-Priluchniy/Res2" "-BC:/Users/ssh-o/Рабочий стол/Projects/VS/Build/NewRes2" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/ssh-o/Рабочий стол/Projects/VS/Build/NewRes2/Res2.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
