@@ -1,0 +1,10 @@
+^C:\USERS\4ELIK\SOURCE\REPOS\BUILD\NEWRES1\CMAKEFILES\C172673B0158BFC2140E9F4B276A3526\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/4elik/Documents/GitHub/Lab1-Shatalov-Priluchniy/Res1 -BC:/Users/4elik/source/repos/build/NewRes1 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/4elik/source/repos/build/NewRes1/Res1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
